@@ -1,0 +1,23 @@
+[package]
+name = "image2ascii"
+authors= ["jwnhy"]
+license = "MIT"
+description = "A tool to encode image into ASCII"
+readme = "README.md"
+homepage = "https://github.com/SiddarGu/image2ascii"
+repository = "https://github.com/SiddarGu/image2ascii"
+keywords = ["cli", "ascii", "image"]
+categories = ["command-line-utilities"]
+version = "0.1.1"
+edition = "2021"
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+opencv = { version = "0.63.0", features = ["rgb"] }
+ansi_rgb = "0.2.0"
+rgb = "0.8"
+clap = { version = "3.1.6", features = ["derive"] }
